@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Fitness Club</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+
+    <style>
+        body{
+            height: 1000px;
+            font-family: 'Baloo Bhai', cursive;
+            background-image: url('https://wallpaperaccess.com/full/5274380.jpg');
+            background-repeat: no-repeat;
+        }
+        .left{
+            /* background-color: white;
+            border: 3px solid black; */
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            padding: 0px 50px;
+        }
+        .mid{
+            /* background-color: white;
+            border: 3px solid black; */
+            color: white;
+            width: 700px;
+            margin: 20px auto;
+        }
+        .right{
+            background-color: white;
+            border: 3px solid black;
+            display: inline-block;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+        .left img{
+            width: 150px;
+            height: 130px;
+        }
+        .gymname{
+            text-align: center;
+            font-size: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: rgb(248, 248, 248);
+            text-decoration: none;
+            font-size: 30px;
+            padding: 5px 15px;
+        }
+
+        .navbar li a.active, .navbar li a:hover{
+            text-decoration: underline;
+        }
+        .but{
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 18px;
+            color: black;
+            background-color: rgb(241, 208, 147);
+            padding: 0px 8px;
+            margin: 5px;
+        }
+
+        .but:hover, .but:active{
+            text-decoration: underline;
+        }
+
+        .contain{
+            border: 5px solid white; 
+            width: 500px;
+            margin: 200px 150px;
+            /* background-color: rgb(250, 238, 211); */
+            border-radius: 50px;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+        }
+
+        .c input{
+            font-size: 20px;
+            display: block;
+            width: 300px;
+            margin:5px auto;
+        }
+
+        .contain button{
+            width: 70px;
+            margin: 5px 300px;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 2px;
+            background-color: rgb(197, 250, 117);
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="https://i.pinimg.com/originals/42/9d/63/429d631659a11a9eb666b103d811470a.jpg" alt="">
+
+            <div class="gymname">
+                Sam's Fitness
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="but">Call us</button>
+            <button class="but">Email us</button>
+        </div>
+    </header>
+
+    <div class="contain">
+        <h1>Join the best gym of Satara</h1>
+        <form action="backend.php">
+            <label for="name"></label>
+            <div class="c">
+                <input type="text" id="name" target placeholder="Enter your name">
+            </div>
+            <div class="c">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="c">
+                <input type="text" placeholder="Enter your gender">
+            </div>
+            <div class="c">
+                <input type="text" placeholder="Enter your locality">
+            </div>
+            <div class="c">
+                <input type="text" placeholder="Enter your contact no.">
+            </div>
+            <div class="c">
+                <input type="text" placeholder="Enter your email">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
